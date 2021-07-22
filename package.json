@@ -1,13 +1,9 @@
 {
   "name": "react-tutorial",
-  "version": "1.0.0",
-  "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --content-base src --mode development"
   },
-  "author": "kota.hagiwara",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.8",
