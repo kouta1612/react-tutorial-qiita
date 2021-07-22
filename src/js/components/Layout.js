@@ -1,11 +1,14 @@
 import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default class Layout extends React.Component {
-  constructor() {
-    super();
-    this.name = "kota.hagiwara";
-  }
   render() {
-    return <h1>It's {this.name}!</h1>;
+    return (
+      <div>
+        <Header></Header>
+        <Footer></Footer>
+      </div>
+    );
   }
 }
