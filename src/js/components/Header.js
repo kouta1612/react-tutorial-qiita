@@ -2,10 +2,15 @@ import React from "react";
 import Title from "./Header/Title";
 
 export default class Header extends React.Component {
+  handleChange = (e) => {
+    const title = e.target.value;
+    this.props.changeTitle(title);
+  }
   render() {
     return (
       <header>
-        <Title></Title>
+        <Title title={this.props.title}></Title>
+        <input value={this.props.title} onChange={this.handleChange} />
       </header>
     );
   }
